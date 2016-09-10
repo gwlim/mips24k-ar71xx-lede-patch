@@ -290,23 +290,6 @@
 + INCLUDE_DIRECTORIES(include)
 + 
 + OPTION(FILE_SUPPORT "File plugin support" ON)
-diff --git a/./package/network/utils/uqmi/patches/01-CMake.patch b/./package/network/utils/uqmi/patches/01-CMake.patch
-new file mode 100644
-index 0000000..fff8ced
---- /dev/null
-+++ b/./package/network/utils/uqmi/patches/01-CMake.patch
-@@ -0,0 +1,11 @@
-+--- a/CMakeLists.txt	2014-11-15 17:25:19.000000000 +0800
-++++ b/CMakeLists.txt	2015-11-27 21:23:16.921701679 +0800
-+@@ -39,7 +39,7 @@ TARGET_CFLAGS += \
-+ TARGET_LDFLAGS += -Wl,--gc-sections
-+ 
-+ CMAKE_OPTIONS += \
-+-	-DDEBUG=1
-++	-DNDEBUG=1
-+ 
-+ define Package/uqmi/install
-+ 	$(INSTALL_DIR) $(1)/sbin
 diff --git a/./package/network/utils/umbim/patches/CMakeList.patch b/./package/network/utils/umbim/patches/CMakeList.patch
 new file mode 100644
 index 0000000..f14e252
