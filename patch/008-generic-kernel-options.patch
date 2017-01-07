@@ -206,7 +206,7 @@ index 8ce316b..ef05be6 100644
 -# CONFIG_NF_NAT is not set
 +# CONFIG_NF_LOG_IPV4 is not set
 +# CONFIG_NF_LOG_IPV6 is not set
-+# CONFIG_NF_NAT is not set
++CONFIG_NF_NAT=y
 +# CONFIG_NF_NAT_IPV4 is not set
 +# CONFIG_NF_DEFRAG_IPV6 is not set
  # CONFIG_NF_NAT_AMANDA is not set
