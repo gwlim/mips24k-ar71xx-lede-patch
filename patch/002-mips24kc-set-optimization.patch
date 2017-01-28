@@ -5,7 +5,7 @@ index 3f5bc67..e17760b 100644
 @@ -10,7 +10,8 @@ ARCH:=mips
  BOARD:=ar71xx
  BOARDNAME:=Atheros AR7xxx/AR9xxx
- FEATURES:=usbgadget
+ FEATURES:=
 -CPU_TYPE:=24kc
 +CPU_TYPE:=24kc
 +CPU_SUBTYPE:=
