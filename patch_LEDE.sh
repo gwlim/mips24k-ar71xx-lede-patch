@@ -7,6 +7,7 @@ rm ./feeds/luci/protocols/luci-proto-ppp/luasrc/model/cbi/admin_network/proto_pp
 echo Remove Support for DIR-825 and AllNet Devices
 rm ./target/linux/ar71xx/base-files/lib/upgrade/dir825.sh
 rm ./target/linux/ar71xx/base-files/lib/upgrade/allnet.sh
+rm ./target/linux/generic/patches-4.4/025-bcma-from-4.11.patch
         for i in $( ls patch ); do
             echo Applying patch $i
             patch -p1 < patch/$i
