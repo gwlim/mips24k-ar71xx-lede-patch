@@ -62,7 +62,8 @@ done
 #cp  ./l7-protocols-2009-05-28/protocols/smtp.pat  ./package/network/utils/iptables/files/l7/
 #cp  ./l7-protocols-2009-05-28/protocols/ssl.pat  ./package/network/utils/iptables/files/l7/
 #cp  ./l7-protocols-2009-05-28/protocols/vnc.pat  ./package/network/utils/iptables/files/l7/
-
+rm ./target/linux/generic/patches-4.4/042-0004-mtd-bcm47xxpart-fix-parsing-first-block-after-aligne.patch
+rm ./target/linux/generic/patches-4.4/062-0*
 make defconfig
 rm .config
 make defconfig
