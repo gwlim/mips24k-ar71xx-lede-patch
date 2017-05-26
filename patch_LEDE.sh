@@ -7,7 +7,6 @@ rm ./feeds/luci/protocols/luci-proto-ppp/luasrc/model/cbi/admin_network/proto_pp
 echo Remove Support for DIR-825 and AllNet Devices
 rm ./target/linux/ar71xx/base-files/lib/upgrade/dir825.sh
 rm ./target/linux/ar71xx/base-files/lib/upgrade/allnet.sh
-rm ./target/linux/generic/patches-4.4/025-bcma-from-4.11.patch
         for i in $( ls patch ); do
             echo Applying patch $i
             patch -p1 < patch/$i
@@ -62,8 +61,6 @@ done
 #cp  ./l7-protocols-2009-05-28/protocols/smtp.pat  ./package/network/utils/iptables/files/l7/
 #cp  ./l7-protocols-2009-05-28/protocols/ssl.pat  ./package/network/utils/iptables/files/l7/
 #cp  ./l7-protocols-2009-05-28/protocols/vnc.pat  ./package/network/utils/iptables/files/l7/
-rm ./target/linux/generic/patches-4.4/042-0004-mtd-bcm47xxpart-fix-parsing-first-block-after-aligne.patch
-rm ./target/linux/generic/patches-4.4/062-0*
 make defconfig
 rm .config
 make defconfig
