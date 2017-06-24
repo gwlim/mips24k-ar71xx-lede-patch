@@ -1,6 +1,14 @@
 #!/bin/bash
 set -e
+echo Add QCA Repo
+wget https://source.codeaurora.org/quic/qsdk/oss/system/openwrt/plain/include/local-development.mk -P ./include/
+sed -i 's|git describe --dirty|git describe|g' ./include/local-development.mk
+sed -i 's|$(TOPDIR)/qca/src/$(PKG_NAME)|$(TOPDIR)/package/qca/$(PKG_NAME)/src|g' ./include/local-development.mk
+echo 'src-git shortcutfe https://source.codeaurora.org/quic/qsdk/oss/system/feeds/shortcut-fe.git;release/endive_mips' >> ./feeds.conf.default
 ./scripts/feeds update -a
+mkdir -p ./package/qca/
+mv ./feeds/shortcutfe/* ./package/qca
+sed -i '$d' feeds.conf.default
 ./scripts/feeds install -a
 echo Remove Support for PPPOA
 rm ./feeds/luci/protocols/luci-proto-ppp/luasrc/model/cbi/admin_network/proto_pppoa.lua
