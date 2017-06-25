@@ -1,5 +1,5 @@
-Custom LEDE Patch For TL-WR1043ND
-======================================================
+Custom LEDE Patch For TL-WR1043ND (With Working Fast Path)
+==========================================================
 
 Dependencies
 ------------
@@ -30,6 +30,12 @@ Run the script
 ./patch_LEDE.sh
 
 Make Menuconfig Default Target Profile is TP-LINK TL-WR1043ND (all the packages and config is inside)
+Make Menuconfig Default Target is TL-WDR4300 (all the packages and config is inside)
+If you want to enable Fast Path select all the fast path modules in 
+Go to 
+Kernel Modules > Network Support > 
+Select all the 3 modules
+kmod-fast-classifier, kmod-shortcut-fe, kmod-shortcut-fe-cm
 
     make menuconfig
 
