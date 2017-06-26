@@ -8,6 +8,8 @@ echo 'src-git shortcutfe https://source.codeaurora.org/quic/qsdk/oss/system/feed
 ./scripts/feeds update -a
 mkdir -p ./package/qca/
 mv ./feeds/shortcutfe/* ./package/qca
+# Delete the last 2 lines of feed conf because Repositories DO NOT EXIST
+sed -i '$d' feeds.conf.default
 sed -i '$d' feeds.conf.default
 ./scripts/feeds install -a
 echo Remove Support for PPPOA
