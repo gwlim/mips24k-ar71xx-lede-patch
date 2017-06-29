@@ -3530,7 +3530,7 @@ index 0000000..99068f7
 +	acct = nf_conn_acct_find(ct);
 +	if (acct) {
 +		spin_lock_bh(&ct->lock);
-+		atomic64_add(sis->src_new_packet_count, &SFE_ACCT_COUNTER(acct)[IP_CT_DIR_ORIGINAL].packets)
++		atomic64_add(sis->src_new_packet_count, &SFE_ACCT_COUNTER(acct)[IP_CT_DIR_ORIGINAL].packets);
 +		atomic64_add(sis->src_new_byte_count, &SFE_ACCT_COUNTER(acct)[IP_CT_DIR_ORIGINAL].bytes);
 +		atomic64_add(sis->dest_new_packet_count, &SFE_ACCT_COUNTER(acct)[IP_CT_DIR_REPLY].packets);
 +		atomic64_add(sis->dest_new_byte_count, &SFE_ACCT_COUNTER(acct)[IP_CT_DIR_REPLY].bytes);
