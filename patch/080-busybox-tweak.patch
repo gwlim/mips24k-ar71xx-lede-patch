@@ -7,7 +7,7 @@ index 1977e7f..4fd3769 100644
  config BUSYBOX_DEFAULT_SHOW_USAGE
  	bool
 -	default y
-+	default n
++	default y
  config BUSYBOX_DEFAULT_FEATURE_VERBOSE_USAGE
  	bool
 -	default y
