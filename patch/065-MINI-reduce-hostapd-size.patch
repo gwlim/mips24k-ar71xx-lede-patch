@@ -13,7 +13,7 @@ index 2bd7d23..75cb10e 100644
  # This can be used to reduce the size of the hostapd considerably if debugging
  # code is not needed.
 -#CONFIG_NO_STDOUT_DEBUG=y
-+CONFIG_NO_STDOUT_DEBUG=y
++#CONFIG_NO_STDOUT_DEBUG=y
  
  # Send debug messages to syslog instead of stdout
  CONFIG_DEBUG_SYSLOG=y
