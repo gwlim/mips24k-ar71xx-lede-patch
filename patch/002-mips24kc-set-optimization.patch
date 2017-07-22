@@ -17,6 +17,6 @@ index 3f5bc67..e17760b 100644
  DEFAULT_PACKAGES += \
  	kmod-gpio-button-hotplug swconfig \
 -	kmod-ath9k wpad-mini uboot-envtools
-+	kmod-ath9k wpad-mini
++	kmod-ath9k wpad
  
  $(eval $(call BuildTarget))
