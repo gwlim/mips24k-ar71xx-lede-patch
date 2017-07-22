@@ -6,7 +6,7 @@
  # Default packages - the really basic set
 -DEFAULT_PACKAGES:=base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd
 +DEFAULT_PACKAGES:=base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd \
-+luci luci-app-ddns luci-app-mwan3 luci-app-sqm \
++luci luci-app-ddns luci-app-sqm \
 + \
 + \
 +kmod-sched-cake \
