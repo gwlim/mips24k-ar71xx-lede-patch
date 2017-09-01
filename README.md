@@ -30,16 +30,13 @@ Run the script
 ./patch_LEDE.sh
 
 Make Menuconfig Default Target Profile is TP-LINK TL-WR1043ND (all the packages and config is inside)
-Make Menuconfig Default Target is TL-WDR4300 (all the packages and config is inside)
 If you want to enable Fast Path select all the fast path modules in
 
 Kernel Modules > Network Support > 
 
-Select all the 3 modules
+Select
 
 * kmod-fast-classifier
-* kmod-shortcut-fe
-* kmod-shortcut-fe-cm
 
     make menuconfig
 
@@ -50,11 +47,9 @@ Save and make
 FAQ
 ---
 
-I can't connect to certain websites, what is wrong?
+Cannot install packages with Kernel Dependencies?
 
-* Go to Network > Firewall > General Settings
-
-* Check on MSS Clamping
+Use --nodeps in opkg
 
 
 Where can I download the firmware for my Router?
