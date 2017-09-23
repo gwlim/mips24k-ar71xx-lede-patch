@@ -40,7 +40,9 @@ Run the script
 > `make menuconfig` Default Target Profile is TP-LINK TL-WR1043ND (all the packages and config is inside)
 
 If you want to enable Fast Path select all the fast path modules in
+
 > Kernel Modules > Network Support > 
+
 Select
 
 > * kmod-fast-classifier
