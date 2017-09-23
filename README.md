@@ -15,47 +15,47 @@ How to use
 * Install Java Runtime
 * Clone the LEDE Repository
 
-```shell
-git clone -b lede-17.01 https://github.com/lede-project/source.git lede
-```
+  ```shell
+  git clone -b lede-17.01 https://github.com/lede-project/source.git lede
+  ```
 
-Clone this Repository and copy into the LEDE repository
+* Clone this Repository and copy into the LEDE repository
 
-```shell
-git clone -b lede-17.01 https://github.com/gwlim/mips24k-lede-patch.git temp; mv temp/* lede/; rm -rf temp
-```
+  ```shell
+  git clone -b lede-17.01 https://github.com/gwlim/mips24k-lede-patch.git temp; mv temp/* lede/; rm -rf temp
+  ```
 
-Change directory into the LEDE Repository
+* Change directory into the LEDE Repository
 
-```shell
-cd lede
-```
+  ```shell
+  cd lede
+  ```
 
-Run the script
+* Run the script
 
-```shell
-./patch_LEDE.sh
-```
+  ```shell
+  ./patch_LEDE.sh
+  ```
 
-> `make menuconfig` Default Target Profile is TP-LINK TL-WR1043ND (all the packages and config is inside)
+* > `make menuconfig` Default Target Profile is TP-LINK TL-WR1043ND (all the packages and config is inside)
 
-If you want to enable Fast Path select all the fast path modules in
+  If you want to enable Fast Path select all the fast path modules in
 
-> Kernel Modules > Network Support > 
+  > Kernel Modules > Network Support > 
 
-Select
+  Select
 
-> * kmod-fast-classifier
+  > * kmod-fast-classifier
 
-```shell
-make menuconfig
-```
+  ```shell
+  make menuconfig
+  ```
 
-Save and make
+* Save and make
 
-```shell
-make V=s
-```
+  ```shell
+  make V=s
+  ```
 
 FAQ
 ---
